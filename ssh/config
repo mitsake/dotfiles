@@ -1,0 +1,14 @@
+Host mitsake
+	Hostname ssh.phx.nearlyfreespeech.net
+	Port 22
+	User zak_mitsake
+
+Host ttrss
+	Hostname ssh.phx.nearlyfreespeech.net
+	Port 22
+	User zak_ttrss-mitsake
+
+Host airpi
+	Hostname airpi.local
+	Port 22
+	User pi

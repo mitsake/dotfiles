@@ -1,0 +1,64 @@
+" Turn on syntax highlighting and make it solarized.
+syntax on
+set background=dark
+colorscheme solarized
+
+set shortmess+=I " disable default startup message
+
+" Tab/indent settings
+set expandtab " tab to spaces
+set shiftwidth=4 " number of spaces when shift indenting
+set softtabstop=4 " number of spaces in tab when editing
+set smartindent " turn on smart indent (extra level of indent in some cases)
+
+" Line numbers and highlighting
+set number " show line numbers
+set relativenumber " and make them relative
+set cursorline  " highlight current line
+set showmatch " highlight matching [{()}]
+
+" Search options
+set incsearch " search as characters are entered
+set hlsearch " highlight matches
+set ignorecase " searches ignore case...
+set smartcase " ...unless the search contains uppercase
+
+" Always show the status line at the bottom, even if you only have one window open.
+set laststatus=2
+
+" Show file details in the title
+set title
+
+" The backspace key has slightly unintuitive behavior by default. For example,
+" by default, you can't backspace before the insertion point set with 'i'.
+" This configuration makes backspace behave more reasonably, in that you can
+" backspace over anything.
+set backspace=indent,eol,start
+
+" By default, Vim doesn't let you hide a buffer (i.e. have a buffer that isn't
+" shown in any window) that has unsaved changes. This is to prevent you from "
+" forgetting about unsaved changes and then quitting e.g. via `:qa!`. We find
+" hidden buffers helpful enough to disable this protection. See `:help hidden`
+" for more information on this.
+set hidden
+
+" Disable audible bell because it's annoying.
+set noerrorbells visualbell t_vb=
+
+" Key bindings
+" Disable arrow keys in normal mode
+nnoremap <Left>  :echoe "Use h"<CR>
+nnoremap <Right> :echoe "Use l"<CR>
+nnoremap <Up>    :echoe "Use k"<CR>
+nnoremap <Down>  :echoe "Use j"<CR>
+
+nmap Q <Nop> " Stop 'Q' from entering Ex mode
+map <C-Left> <Esc>:bprev<CR> " Move between buffers with ^Left
+map <C-Right> <Esc>:bnext<CR> " and ^Right
+map <C-h> <C-W>h " Move between left
+map <C-l> <C-W>l " and right vertical splits
+
+" Time to play with wildmode!
+set wildmenu
+set wildmode=longest:full,full
+
