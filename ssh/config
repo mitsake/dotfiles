@@ -1,14 +1,21 @@
+IgnoreUnknown UseKeychain
+
+Host *
+    AddKeysToAgent yes
+    UseKeychain yes
+    IdentityFile ~/.ssh/id_rsa
+
 Host mitsake
-	Hostname ssh.phx.nearlyfreespeech.net
-	Port 22
-	User zak_mitsake
+    Hostname ssh.phx.nearlyfreespeech.net
+    Port 22
+    User zak_mitsake
 
 Host ttrss
-	Hostname ssh.phx.nearlyfreespeech.net
-	Port 22
-	User zak_ttrss-mitsake
+    Hostname ssh.phx.nearlyfreespeech.net
+    Port 22
+    User zak_ttrss-mitsake
 
 Host airpi
-	Hostname airpi.local
-	Port 22
-	User pi
+    Hostname airpi.local
+    Port 22
+    User pi
