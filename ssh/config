@@ -15,7 +15,7 @@ Host ttrss
     Port 22
     User zak_ttrss-mitsake
 
-Host airpi
-    Hostname airpi.local
+Host rpi
+    Hostname raspberrypi.local
     Port 22
     User pi
