@@ -18,4 +18,4 @@ Host ttrss
 Host ook
     Hostname ook.local
     Port 22
-    User pi
+    User ubuntu
