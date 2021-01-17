@@ -3,7 +3,6 @@ IgnoreUnknown UseKeychain
 Host *
     AddKeysToAgent yes
     UseKeychain yes
-    IdentityFile ~/.ssh/id_rsa
 
 Host mitsake
     Hostname ssh.phx.nearlyfreespeech.net
@@ -11,6 +10,6 @@ Host mitsake
     User zak_mitsake
 
 Host ook
-    Hostname ook.local
+    Hostname ook.mitsake.net
     Port 22
     User ubuntu
