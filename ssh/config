@@ -11,5 +11,5 @@ Host mitsake
 
 Host ook
     Hostname ook.mitsake.net
-    Port 22
+    Port 2222
     User ubuntu

@@ -8,7 +8,7 @@ conky.config = {
     draw_outline = false,
     draw_shades = false,
     use_xft = true,
-    font = 'DejaVu Sans Mono:size=10',
+    font = 'Source Code Variable:size=12',
     gap_x = 25 ,
     gap_y = 25,
     minimum_height = 5,
@@ -33,7 +33,7 @@ $alignc$color$uptime
 $hr
 ${color grey}CPU Frequency:$color $freq_g GHz
 ${color grey}CPU Usage:$color $cpu%
-${color grey}CPU Temp:$color ${exec sensors | grep 'Package' | cut -c17-18}°C
+${color grey}CPU Temp:$color ${platform coretemp.0/hwmon/hwmon3/ temp 1}°C
 ${color grey}Processes:$color $processes ($running_processes)
 $hr
 ${color grey}RAM:$color $mem / $memmax
