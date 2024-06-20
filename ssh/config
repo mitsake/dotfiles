@@ -5,11 +5,11 @@ Host *
     UseKeychain yes
 
 Host mitsake
-    Hostname ssh.phx.nearlyfreespeech.net
+    Hostname ssh.nyc1.nearlyfreespeech.net
     Port 22
     User zak_mitsake
 
-Host ook
-    Hostname ook.mitsake.net
+Host hex
+    Hostname hex.mitsake.net
     Port 2222
     User zak
